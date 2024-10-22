@@ -1,0 +1,32 @@
+C:\ITOS\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.deps.json
+C:\ITOS\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.dll
+C:\ITOS\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.pdb
+C:\ITOS\application-services\Services.Abstractions\bin\Debug\net6.0\Domain.dll
+C:\ITOS\application-services\Services.Abstractions\bin\Debug\net6.0\Domain.pdb
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfo.cs
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.sourcelink.json
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.E74F1EB6.Up2Date
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.dll
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\refint\Services.Abstractions.dll
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.pdb
+C:\ITOS\application-services\Services.Abstractions\obj\Debug\net6.0\ref\Services.Abstractions.dll
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.deps.json
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.dll
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\bin\Debug\net6.0\Services.Abstractions.pdb
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\bin\Debug\net6.0\Domain.dll
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\bin\Debug\net6.0\Domain.pdb
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.AssemblyInfo.cs
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.sourcelink.json
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.E74F1EB6.Up2Date
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.dll
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\refint\Services.Abstractions.dll
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\Services.Abstractions.pdb
+C:\Users\DELL\Documents\Profice\Profice_test\Project Docker\application-services\Services.Abstractions\obj\Debug\net6.0\ref\Services.Abstractions.dll
