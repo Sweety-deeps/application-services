@@ -1,0 +1,88 @@
+# This AWS SAM template has been generated from your function's configuration. If
+# your function has one or more triggers, note that the AWS resources associated
+# with these triggers aren't fully specified in this template and include
+# placeholder values. Open this template in AWS Application Composer or your
+# favorite IDE and modify it to specify a serverless application with other AWS
+# resources.
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An AWS Serverless Application Model template describing your function.
+Resources:
+  devSamApplicationServiceApi:    
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Cors:
+        AllowMethods: "'GET, POST, PUT, DELETE'"
+        AllowHeaders: "'*'"
+        AllowOrigin: "'*'"
+      Auth:        
+        Authorizers:
+          devCognitoAuth:
+            UserPoolArn: arn:aws:cognito-idp:us-east-1:005456852793:userpool/us-east-1_CJppKkIcE
+            Identity:
+              Header: Authorization
+  devSamApplicationService:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./ApplicationService/
+      Description: ''
+      MemorySize: 512
+      Timeout: 180
+      Handler: >-
+        ApplicationService::ApplicationService.LambdaEntryPoint::FunctionHandlerAsync
+      Runtime: dotnet6
+      Role: arn:aws:iam::005456852793:role/UltipayAPI-AspNetCoreFunctionRole-GAP6RM5MHP1O
+      FunctionName: dev-sam-ApplicationService
+      Architectures:
+        - x86_64
+      EphemeralStorage:
+        Size: 512
+      Environment:
+        Variables:
+          ASPNETCORE_ENVIRONMENT: AwsDev
+          AWSREGION: us-east-1
+          CONFIG_SECRET_MANAGER: SAM_Database_UltipayDev
+          DBConnectionString: SAM_Database_UltipayDev
+          PublisherSQS: https://sqs.us-east-1.amazonaws.com/005456852793/devCDPublisherQueue
+          InboundJson_S3BucketName: dev-ultipayapi-inboundjson
+          Config__S3ReportOutputBucketName: dev-reports-output
+          Config__S3PayslipBucketName: dev-ultipay-payslips
+          Config__S3DataImportBucketName: dev-ultipay-dataimport
+          Config__S3ErrorDetailsBucketName:  dev-dataimport-errordetails
+          Config__S3SerializedGpriBucketName: dev-serialized-gpri
+          Config__S3TempPayslipBucketName: dev-ultipay-tempupload-payslips
+          UltipayReportTemplateBucket: ultipay-report-template
+      EventInvokeConfig:
+        MaximumEventAgeInSeconds: 21600
+        MaximumRetryAttempts: 2      
+      PackageType: Zip      
+      SnapStart:
+        ApplyOn: None
+      Tags:
+        AWSServerlessAppNETCore: 'true' 
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0eb88b85f215534de
+        SubnetIds:
+          - subnet-013d6fac8d4a313aa
+          - subnet-01e74c556775ea0f3
+        Ipv6AllowedForDualStack: false
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+            RestApiId: !Ref devSamApplicationServiceApi
+            Auth:
+              Authorizer: devCognitoAuth
+              
+        Api2:
+          Type: Api
+          Properties:
+            Path: /
+            Method: ANY
+            RestApiId: !Ref devSamApplicationServiceApi
+            Auth:
+              Authorizer: devCognitoAuth              

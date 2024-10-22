@@ -1,0 +1,66 @@
+# More information about the configuration file can be found here:
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html
+version = 0.1
+
+# Development config
+
+[dev]
+[dev.global.parameters]
+stack_name = "SAM-ApplicationServices"
+
+[dev.build.parameters]
+cached = true
+parallel = true
+
+[dev.validate.parameters]
+lint = true
+
+[dev.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+
+[dev.package.parameters]
+resolve_s3 = true
+
+# Staging config
+
+[staging]
+[staging.global.parameters]
+stack_name = "Staging-SAM-ApplicationServices"
+
+[staging.build.parameters]
+cached = true
+parallel = true
+
+[staging.validate.parameters]
+lint = true
+
+[staging.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+
+[staging.package.parameters]
+resolve_s3 = true
+
+# prod config
+
+[prod]
+[prod.global.parameters]
+stack_name = "Prod-SAM-ApplicationServices"
+
+[prod.build.parameters]
+cached = true
+parallel = true
+
+[prod.validate.parameters]
+lint = true
+
+[prod.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+
+[prod.package.parameters]
+resolve_s3 = true
