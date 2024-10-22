@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.300.1" />
+    <PackageReference Include="AWSSDK.SQS" Version="3.7.300.12" />
+    <PackageReference Include="ClosedXML" Version="0.102.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.7.301.11" />
+    <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.302.14" />
+    <PackageReference Include="IdentityModel" Version="6.2.0" />
+    <PackageReference Include="SSH.NET" Version="2024.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="TimeZoneConverter" Version="6.1.0" />
+    <PackageReference Include="AWSSDK.EventBridge" Version="3.7.303.5" />
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\Services.Abstractions\Services.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Users\" />
+    <None Remove="Helpers\" />
+    <None Remove="Dayforce\" />
+    <None Remove="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Users\" />
+	<Folder Include="Helpers\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+</Project>
