@@ -1,0 +1,38 @@
+{
+  "profiles": {
+    "ApplicationService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "AWSDev",
+        "CONFIG_SECRET_MANAGER": "SAM_Database_UltipayDev",
+        "InboundJson_S3BucketName": "dev-ultipayapi-inboundjson",
+        "PublisherSQS": "https://sqs.us-east-1.amazonaws.com/005456852793/devCDPublisherQueue",
+        "Config__S3ReportOutputBucketName": "dev-reports-output",
+        "Config__S3PayslipBucketName": "dev-ultipay-payslips",
+        "Config__S3DataImportBucketName": "dev-ultipay-dataimport",
+        "Config__S3ErrorDetailsBucketName": "dev-dataimport-errordetails",
+        "Config__S3SerializedGpriBucketName": "dev-serialized-gpri",
+        "Config__S3TempPayslipBucketName": "dev-ultipay-tempupload-payslips",
+        "ARN_LAMBDA_APPLICATION_SERVICE": "localfunction"
+      },
+      "applicationUrl": "https://localhost:52708"
+    },
+    "Mock Lambda Test Tool": {
+      "commandName": "Executable",
+      "executablePath": "%USERPROFILE%\\.dotnet\\tools\\dotnet-lambda-test-tool-6.0.exe",
+      "commandLineArgs": "--port 5050",
+      "workingDirectory": ".\\bin\\$(Configuration)\\net6.0"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:443;http://+:80"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
