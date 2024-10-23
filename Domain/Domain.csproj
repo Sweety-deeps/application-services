@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <None Remove="Model\**" />
+    <None Remove="Entities\Users\" />
+    <None Remove="Models\Users\" />
+    <None Remove="Models\Users\Extensions\" />
+    <None Remove="Models\Dayforce\" />
+    <None Remove="Models\Payslips\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Users\" />
+    <Folder Include="Models\Users\" />
+    <Folder Include="Models\Users\Extensions\" />
+    <Folder Include="Models\Dayforce\" />
+    <Folder Include="Models\Payslips\" />
+    <Folder Include="RepositoryInterfaces\" />
+  </ItemGroup>
+</Project>
